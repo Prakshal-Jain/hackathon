@@ -14,7 +14,7 @@ const Network = () => {
     return await fetch(
       (`https://serverhackathon.prakshal.repl.co/summary`),
       {
-        mode: 'cors',
+        mode: 'no-cors',
         headers: {
             "Access-Control-Allow-Origin": "*",
             'Content-Type': 'application/json',
