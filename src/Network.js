@@ -16,7 +16,7 @@ const Network = () => {
       {
         mode: 'cors',
         headers: {
-            "Access-Control-Allow-Origin": "https://serverhackathon.prakshal.repl.co",
+            "Access-Control-Allow-Origin": "*",
             'Content-Type': 'application/json',
         }
       }
