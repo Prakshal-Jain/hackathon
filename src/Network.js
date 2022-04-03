@@ -12,7 +12,13 @@ const Network = () => {
 
   const summary = async () => {
     return await fetch(
-      (`https://serverhackathon.prakshal.repl.co/summary`)
+      (`https://serverhackathon.prakshal.repl.co/summary`),
+      {
+        mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+      }
     )
       .then(response => response.json())
       .then((response) => setnumDeployments(response))
