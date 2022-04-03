@@ -16,6 +16,7 @@ const Network = () => {
       {
         mode: 'cors',
         headers: {
+            "Access-Control-Allow-Origin": "https://serverhackathon.prakshal.repl.co",
             'Content-Type': 'application/json',
         }
       }
@@ -36,7 +37,7 @@ const Network = () => {
       (`deployment?number=${deployment_index}`)
     )
       .then(response => response.json())
-      .then((response) => {setDeployment(response); setCurrIdx(deployment_index)})
+      .then((response) => { setDeployment(response); setCurrIdx(deployment_index) })
       .catch((error) => {
         console.log(error)
       })
