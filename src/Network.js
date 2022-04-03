@@ -12,7 +12,7 @@ const Network = () => {
 
   const summary = async () => {
     return await fetch(
-      (`summary`)
+      (`https://serverhackathon.prakshal.repl.co/summary`)
     )
       .then(response => response.json())
       .then((response) => setnumDeployments(response))

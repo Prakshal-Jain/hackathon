@@ -6,7 +6,7 @@ import './button_edge.css';
 const foreignObjectSize = 40;
 
 const postDelete = async (id) => {
-    await fetch('deleteEdge', {
+    await fetch('https://serverhackathon.prakshal.repl.co/deleteEdge', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
